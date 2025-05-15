@@ -41,8 +41,8 @@
     border-bottom: 1px solid #444
 }
 
-.table-header h4,
-.table-data p{
+,
+.table-data p, .table-header h4{
     flex:1;
 }
 
