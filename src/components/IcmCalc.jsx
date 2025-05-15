@@ -35,11 +35,11 @@ const [weight, setWeight] = useState('')
         <div className="form-inputs">
           <div className="form-control">
             <label htmlFor="height">Altura:</label>
-            <input type="text" name='height' id='height' placeholder='Ex: 1.70' onChange={(e) => handleHeightChange(e)}  value={heigth}/>
+            <input type="text" name='height' id='height' placeholder='Ex: 1.70' onChange={(e) => handleHeightChange(e)}  value={heigth} required/>
           </div>
           <div className="form-control">
             <label htmlFor="weight">Peso:</label>
-            <input type="text" name='weight' id='weight' placeholder='Ex: 70.5' onChange={(e) => handleweightChange(e)} value={weight}/>
+            <input type="text" name='weight' id='weight' placeholder='Ex: 70.5' onChange={(e) => handleweightChange(e)} value={weight} required/>
           </div>
         </div>
         <div className="action-control">

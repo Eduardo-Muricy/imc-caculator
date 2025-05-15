@@ -30,8 +30,16 @@ function App() {
 
 
     if (!info) return
-
+    
   }
+
+  function resetCalc(e){
+    e.preventDefault()
+    setImc('')
+    setInfo('')
+    setInfoClass('')
+  }
+
 const [imc, setImc] = useState('')
   const [info, setInfo] = useState('')
   const [infoClass, setInfoClass] = useState('')
@@ -39,7 +47,7 @@ const [imc, setImc] = useState('')
   return (
     <div className='container'>
 
-      {!imc ? (<IcmCalc calcImc={calcImc} />) : (<ImcTable data={data} imc={imc} info={info} infoClass={infoClass} />)}
+      {!imc ? (<IcmCalc calcImc={calcImc} />) : (<ImcTable data={data} imc={imc} info={info} infoClass={infoClass} resetCalc={resetCalc} />)}
 
     </div>
 
