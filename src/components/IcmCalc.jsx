@@ -13,7 +13,7 @@ const [weight, setWeight] = useState('')
     }
 
     function validDigits(text){
-      return text.replace(/[^0-9.]/g, '')
+      return text.replace(/[^0-9,]/g, '')
     }
 
 
