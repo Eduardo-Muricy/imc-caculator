@@ -1,4 +1,4 @@
-import './ImcTable.css'
+import '../ImcTable.css'
 import Button from "./Button"
 const ImcTable = ({data, imc,info,infoClass, resetCalc}) => {
   return (
